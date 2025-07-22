@@ -10,10 +10,10 @@
   <!-- kinematics: description of the kinematics that comes from a YAML file. Example definition: ${xacro.load_yaml('$(find robot_descriptions)/robots/fr3/kinematics.yaml')} -->
   <!-- inertials: description of the inertials that comes from a YAML file. Example definition: ${xacro.load_yaml('$(find robot_descriptions)/robots/fr3/inertials.yaml')} -->
   <!-- dynamics: description of the dynamics that comes from a YAML file. Example definition: ${xacro.load_yaml('$(find robot_descriptions)/robots/fr3/dynamics.yaml')} -->
-  <link name="base">
+  <link name="fp3_2_base">
       </link>
   <joint name="fp3_2_base_joint" type="fixed">
-    <parent link="base"/>
+    <parent link="fp3_2_base"/>
     <child link="fp3_2_link0"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
